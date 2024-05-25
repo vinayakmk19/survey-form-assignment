@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #726cf8;
+    background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+
+main form{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.proficiency label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+header h2{
+    color: #726cf9;
+    margin-bottom: 15px;
+}
+
+header p{
+    margin-bottom: 15px;
+}
+
+section div .text-bold{
+    font-weight: 600;
+    /* font-size: 14px; */
+    
+}
+
+#name, #email, #phone, #location, fieldset, .proficiency{
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 8px;
+    
+}
+
+::placeholder{
+    color: #726cf8;
+}
+
+button{
+    background-color: #726cf8;
+    color: whitesmoke;
+    padding: 10px;
+    border: 1px solid #e975a8;
+    outline: none;
+    border-radius: 8px;
+    width: 80%;
+}
+
+textarea{
+    width: 60%;
+    height: 60px;
+}
+
+@media (max-width: 1080px) {
+    #name, #email, #phone, #location, fieldset, .proficiency {
+        width: 80%;
+        gap: 20px;
+    }
+}
+@media (max-width: 900px) {
+    #name, #email, #phone, #location, fieldset, .proficiency {
+        width: 80%;
+        gap: 10px;
+    }
+}
+@media (max-width: 720px) {
+    #name, #email, #phone, #location, fieldset, .proficiency {
+        width: 80%;
+        /* gap: 20px; */
+        
+    }
+    main form{
+        flex-direction: column;
+    }
+}
+
+

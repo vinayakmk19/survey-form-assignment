@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Survey Form</h2>
+        <p>
+          Feel free to answer the questions below based on your own experience
+          and opionion. If you are not convenient in answering a perticular
+          question please skip it by ansering "No". Every answer would be very
+          appreciated. Thank You for your time.
+        </p>
+      </header>
+      <main>
+        <form >
+          <section>
+            <div>
+              <label class="text-bold" for="name">Your Name</label>
+              <br>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div>
+              <label class="text-bold" for="email">Your Email Address</label>
+              <br>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="user@user.com"
+              />
+            </div>
+            <div>
+              <label class="text-bold" for="phone">Your Phone Number</label>
+              <br>
+              <input type="number" id="phone" placeholder="9999999999" />
+            </div>
+            <div>
+              <label class="text-bold" for="location">Where do you live ?</label>
+              <br>
+              <select id="location" name="location">
+                <option value="">Select your location</option>
+                <option value="new_york">Assam</option>
+                <option value="los_angeles">Andra Pradesh</option>
+                <option value="chicago">Chattisgarh</option>
+                <option value="houston">Karnataka</option>
+                <option value="phoenix">Kerala</option>
+                <option value="philadelphia">TamilNadu</option>
+                <option value="san_antonio">Maharashtra</option>
+                <option value="san_diego">Goa</option>
+                <option value="dallas">Madhya Pradesh</option>
+                <option value="san_jose">Jharkhand</option>
+              </select>
+            </div>
+            <div>
+              <fieldset>
+                <legend>Age:</legend>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="15-20"
+                    name="drone"
+                    value="15-20"
+                    checked
+                  />
+                  <label for="15-20">15-20</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="20-30" name="drone" value="20-30" />
+                  <label for="20-30">20-30</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="31-40" name="drone" value="31-40" />
+                  <label for="31-40">31-40</label>
+                </div>
+                <div>
+                  <input type="radio" id="41-50" name="drone" value="41-50" />
+                  <label for="41-50">41-50</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="dontsay"
+                    name="drone"
+                    value="Prefer not to say"
+                  />
+                  <label for="dontsay">Prefer not to say</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="proficiency">
+              <label for="proficiency" class="text-bold"
+                >How would you rate your proficiency in coding ?</label
+              >
+              <!-- <label>How would you rate your proficiency in coding?</label> -->
+              <label>
+                <input type="radio" name="proficiency" value="beginner" />
+                Beginner
+              </label>
+              <label>
+                <input type="radio" name="proficiency" value="intermediate" />
+                Intermediate
+              </label>
+              <label>
+                <input type="radio" name="proficiency" value="advanced" />
+                Advanced
+              </label>
+            </div>
+          </section>
+          <section>
+            <div class="proficiency">
+                <label class="text-bold"
+                >Have you ever appeared in a coding contest ?</label
+              >
+              <label>
+                <input type="radio" name="proficiency" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="proficiency" value="No" />
+                No
+              </label>
+            </div>
+            <br>
+            <div>
+              <label class="text-bold" for="comments">Discuss what drives your passion for coding and outline your aspirations in the field.</label> <br>
+              <textarea name="comments" placeholder="Enter your comments here"></textarea>
+            </div>
+            <br>
+            <div>
+                <label class="text-bold" for="challenges">what are some challenges you face while coding?</label> <br>
+                <textarea name="challenges" placeholder="write here"></textarea>
+            </div>
+            <br>
+            <div>
+                <label class="text-bold" for="datastructure">Please list the Data Structure you have a strong understanding of.</label> <br>
+                <textarea name="datastructure" placeholder="Enter here"></textarea>
+            </div>
+            <br>
+            <div>
+              <button class="text-bold">Submit Form</button>
+            </div>
+          </section>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
